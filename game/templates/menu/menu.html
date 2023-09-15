@@ -1,0 +1,1923 @@
+CTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>
+    
+        活动 - AcWing
+    
+</title>
+    
+
+<meta charset="UTF-8">
+<meta name="keywords" content="AcWing,刷题，打卡,线上活动"/>
+<meta name="description" content="本课程为AcWing工程课系列——Level-2 第一篇，讲解Python语法和Django框架。"/>
+<meta name="baidu-site-verification" content="UW1SBiMHO7" />
+<meta name="google-site-verification" content="YTgbOq_0TDShJS6KTcUYCQoAAZTm308SJ7ibsafBD_Y" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" type="image/png" href="https://cdn.acwing.com/static/web/img/favicon.ico"/>
+<link rel="stylesheet" href="https://cdn.acwing.com/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.acwing.com/static/web/node_modules/bootstrap-toggle/css/bootstrap-toggle.min.css">
+<link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/signform.css">
+<link rel="stylesheet" href="https://cdn.acwing.com/static/jquery-ui-dist/jquery-ui.min.css">
+
+    <link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/success_modal.css" />
+
+
+    
+        <link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/wss/chat/chat_list-0.0.1.css">
+    
+
+<!--link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/pace.css"-->
+<!--script src="https://cdn.acwing.com/static/web/js/pace.js"></script-->
+<script>
+    let onbeforeunload_functions = [];
+</script>
+
+
+<style>
+    /* latin */
+    @font-face {
+      font-family: 'Satisfy';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Satisfy Regular'), local('Satisfy-Regular'), url(https://cdn.acwing.com/static/web/fonts/rP2Hp2yn6lkG50LoCZOIHQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 400;
+      src: local('Lato Italic'), local('Lato-Italic'), url(https://cdn.acwing.com/static/web/fonts/S6u8w4BMUTPHjxsAUi-qJCY.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 400;
+      src: local('Lato Italic'), local('Lato-Italic'), url(https://cdn.acwing.com/static/web/fonts/S6u8w4BMUTPHjxsAXC-q.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* latin-ext */
+    @font-face {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 700;
+      src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://cdn.acwing.com/static/web/fonts/S6u_w4BMUTPHjxsI5wq_FQft1dw.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 700;
+      src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://cdn.acwing.com/static/web/fonts/S6u_w4BMUTPHjxsI5wq_Gwft.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* latin-ext */
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Lato Regular'), local('Lato-Regular'), url(https://cdn.acwing.com/static/web/fonts/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Lato Regular'), local('Lato-Regular'), url(https://cdn.acwing.com/static/web/fonts/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    /* latin-ext */
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      src: local('Lato Bold'), local('Lato-Bold'), url(https://cdn.acwing.com/static/web/fonts/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      src: local('Lato Bold'), local('Lato-Bold'), url(https://cdn.acwing.com/static/web/fonts/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+</style>
+<script src="https://cdn.acwing.com/static/jquery/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.acwing.com/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.acwing.com/static/web/node_modules/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+<script src="https://cdn.acwing.com/static/jquery-ui-dist/jquery-ui.min.js"></script>
+<script src="https://cdn.acwing.com/static/web/node_modules/jquery.cookie/jquery.cookie.js"></script>
+<script>
+    $(document).ready(function () {
+        var csrftoken = $.cookie('csrftoken');
+
+        function csrfSafeMethod(method) {
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            },
+            cache: true
+        });
+    });
+</script>
+<script src="https://cdn.acwing.com/static/web/js/signform-0.0.1.js"></script>
+<script src="https://cdn.acwing.com/static/web/js/handlebars-v1.3.0.js"></script>
+<script src="https://cdn.acwing.com/static/web/js/effect_anchor-0.0.1.js"></script>
+<script src="https://cdn.acwing.com/static/web/js/editor/utils-0.0.1.js"></script>
+
+    <script>
+    let chat_state = {
+        me_id: 201486,
+    };
+</script>
+<div style="display: none;">
+    <div id="message_template_me">
+        <div class="row" style="margin: 0; margin-bottom: 10px;">
+            <div class="col-xs-2 pull-right" style="width: 30px; padding: 0; margin-right: 10px;">
+                <a href="https://message_host_space_url">
+                    <img class="img-responsive img-circle" width="30px" height="30px" src="https://www.acwing.com/static/web/img/favicon.ico" alt="我的头像">
+                </a>
+            </div>
+            <div class="col-xs-10 pull-right">
+                <span class="chat-bubble-me pull-right" style="word-break: break-all;">
+                    message_content
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="message_template_you">
+        <div class="row" style="margin: 0; margin-bottom: 10px;">
+            <div class="col-xs-2" style="width: 30px; padding: 0; margin-left: 10px;">
+                <a href="https://message_host_space_url">
+                    <img class="img-responsive img-circle" width="30px" height="30px" src="https://www.acwing.com/static/web/img/favicon.ico" alt="好友头像">
+                </a>
+            </div>
+            <div class="col-xs-10">
+                <span class="chat-bubble-you pull-left" style="word-break: break-all;">
+                    message_content
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="message_create_time">
+        <div class="text-center">
+            <span class="chat-time-format">message create time</span>
+        </div>
+        <br>
+    </div>
+    <div id="message_code_template">
+        <a id="message_code_template_0_message_id_0" style="cursor:pointer;">
+            <img src="https://cdn.acwing.com/static/web/img/chat/code.png" width="75px" style="margin: -17px -22px -14px -22px;" alt="代码">
+        </a>
+    </div>
+    <div id="message_emoji_gif_template">
+        <a style="cursor:pointer;">
+            <img src="https://www.acwing.com/static/web/img/favicon.ico"
+                 width="100px"
+                 style="margin: 0"
+                 title="emoji_gif_description"
+                 alt="表情动画">
+        </a>
+    </div>
+</div>
+    <script src="https://cdn.acwing.com/static/web/js/wss/chat/utils.js"></script>
+
+
+
+    <script src="https://cdn.acwing.com/static/web/third_party/ace-builds/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.acwing.com/static/web/third_party/ace-builds/src-min-noconflict/ext-language_tools-0.0.1.js"></script>
+    <script src="https://cdn.acwing.com/static/web/js/editor/code_completer/dist/code_completer-0.0.11.min.js"></script>
+    <script src="https://cdn.acwing.com/static/web/js/wss/chat/emoji-data.js"></script>
+
+
+
+
+<script>
+    let user_state = {
+        is_authenticated: true,
+        is_pc: false,
+        is_tablet: false,
+        is_mobile: false,
+    };
+    if (user_state.is_authenticated){
+        user_state.user_id = 201486;
+        user_state.info = "";
+    }
+    
+        user_state.is_pc = true;
+    
+</script>
+<script>
+    let GLOBAL_COMMENT_SONS = {};
+</script>
+<style>
+    
+        #acwing_body {
+            background: white url("https://video.acwing.com/image/default/F28E5AF1732348F98066FF06CF414F83-6-2.jpg?auth_key=1695859200-ac2804wing-0-f45ac0c2ccfb69cc381119a7e578a893") fixed;
+            background-size: 100% 100%;
+        }
+    
+
+    
+    @media (min-width: 768px) and (max-width: 1000px) {
+       .collapse {
+           display: none !important;
+       }
+    }
+    .popover {
+        z-index: 1000000 !important;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        width: 750px;
+      }
+    }
+    @media (min-width: 992px) {
+      .container {
+        width: 900px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .container {
+        width: 1000px;
+      }
+    }
+
+    @media (min-width: 1300px) {
+      .container {
+        width: 1170px;
+      }
+    }
+</style>
+
+
+<link rel="stylesheet" href="https://cdn.acwing.com/static/plugins/css/ace.min.css">
+<link rel="stylesheet" href="https://cdn.acwing.com/static/martor/css/martor.min.css">
+
+    <link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/martor.css">
+
+<link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/file_system/file/content/comment.css">
+
+
+    <link rel ="stylesheet" href="https://cdn.acwing.com/static/web/css/style-0.0.16.css">
+
+<link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/base/navbar.css">
+
+    
+
+<link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/file_system/gui/window/base-0.0.4.css">
+<link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/file_system/file/content/whole/application/file_explorer/base-0.0.1.css">
+<link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/file_system/gui/taskbar/base-0.0.5.css">
+<script>
+    let DESKTOP_STATE_WINDOW_OPERATE_OPEN_URL = "/file_system/gui/window/operate/open/666/";
+    let DESKTOP_STATE_TASKBAR_SEARCH_URL = "/file_system/gui/taskbar/search/base/search/";
+    let DESKTOP_STATE_OS_THIRD_PARTY_API_OAUTH2_AUTHORIZE_URL = "/third_party/api/oauth2/acapp/authorize/";
+</script>
+<script src="https://cdn.acwing.com/static/web/js/file_system/file/content/whole/application/file_explorer/dist/file_explorer-0.0.7.min.js"></script>
+<script src="https://cdn.acwing.com/static/web/js/file_system/gui/dist/gui-0.0.60.min.js"></script>
+<script>
+    $(document).ready(function () {
+        let urls = {
+            add: "/file_system/file/operation/content/add/",
+            update: "/file_system/file/operation/content/update/",
+            delete: "/file_system/file/operation/content/delete/",
+            update_refactor_rename: "/file_system/file/operation/content/update/refactor/rename/",
+            command_ls: "/file_system/file/operation/content/command/ls/",
+            command_cp: "/file_system/file/operation/content/command/cp/",
+            command_mv: "/file_system/file/operation/content/command/mv/",
+            command_read: "/file_system/file/operation/content/command/read/",
+        };
+        desktop_state.os.builtin.api.file.operation.set(urls);
+
+        let applications = {
+            file_explorer: 284475,
+            ac_editor: 172575,
+            ac_saber: 118289,
+            settings: 589618,
+            ac_chat: 994425,
+        };
+        desktop_state.os.builtin.application.set(applications);
+
+        let configs = {
+            media_url: "https://cdn.acwing.com/media/",
+            static_url: "https://cdn.acwing.com/static/",
+        };
+        desktop_state.os.builtin.settings.set(configs);
+
+        let auto_open_apps = [];
+        
+            auto_open_apps.push({
+                title: "AC Chat",
+                icon: "https://cdn.acwing.com/media/file_system/file/application/icon/2220490481555590627-128_UQONKkk.png",
+                file_id: 994425,
+            });
+        
+        desktop_state.taskbar.widgets.apps.set(auto_open_apps);
+    });
+</script>
+
+
+    
+    <link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/popover.css">
+    
+        <link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/activity/index_0.0.1.css">
+        <link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/activity/content.css">
+        <style>
+            .activity-menu-button {
+                font-size: 16px;
+                border-radius: 5px;
+                margin-right: 20px;
+            }
+        </style>
+    
+    
+    
+        <link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/activity/punch_the_clock.css">
+        <link rel="stylesheet" href="https://cdn.acwing.com/static/web/css/activity/index_0.0.1.css">
+    
+
+
+</head>
+<body id="acwing_body" style="min-height: 100vh;">
+
+ 
+    
+
+<div class="panel panel-default fs-gui-taskbar"
+        
+            style="width: 100vw; "
+        >
+    <div class="panel-body fs-gui-taskbar-body dropup">
+        <div class="panel panel-default fs-gui-taskbar-begin-menu">
+    <div class="panel-body" style="padding: 0;">
+        <div class="fs-gui-taskbar-begin-menu-item fs-gui-taskbar-begin-menu-item-file">
+            文件
+        </div>
+        <div class="fs-gui-taskbar-begin-menu-item fs-gui-taskbar-begin-menu-item-application">
+            应用
+        </div>
+        <hr style="height: 1vh; margin: 1vh;">
+        <div class="fs-gui-taskbar-begin-menu-item fs-gui-taskbar-begin-menu-item-settings">
+            设置
+        </div>
+    </div>
+</div>
+        <button class="fs-gui-taskbar-begin pull-left btn btn-default">
+            <img src="https://cdn.acwing.com/static/web/img/favicon.ico" alt="开始" title="开始" style="width: 60%;" />
+        </button>
+        <div class="fs-gui-taskbar-search pull-left">
+            <span class="glyphicon glyphicon-search fs-gui-taskbar-search-icon"></span>
+            <label for="fs-gui-taskbar-search-field" class="sr-only"></label>
+            <input id="fs-gui-taskbar-search-field" placeholder="在这里输入你要搜索的内容" />
+        </div>
+        <div class="fs-gui-taskbar-right">
+            <div class="fs-gui-taskbar-task-list"></div>
+            <div class="fs-gui-taskbar-widgets">
+                <div class="fs-gui-taskbar-widgets-clock">
+                    <div class="fs-gui-taskbar-widgets-clock-time">20:46</div>
+                    <div class="fs-gui-taskbar-widgets-clock-date">2023-09-14</div>
+                </div>
+                <div class="fs-gui-taskbar-widgets-apps">
+                    
+                        <div class="fs-gui-taskbar-widgets-apps-item fs-gui-taskbar-widgets-apps-item-994425" title="AC Chat">
+                            <img src="https://cdn.acwing.com/media/file_system/file/application/icon/2220490481555590627-128_UQONKkk.png" alt="AC Chat">
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="fs-gui-advertisement-base"
+        style="position: fixed; top: 15vh; cursor: pointer; display: none; z-index:999999999">
+    <div>
+        <div id="fs-gui-advertisement-base-title"></div>
+        <div style="text-align: left; font-size: 80%;">
+            <span style="font-size: 80%;">¥</span>
+            <span id="fs-gui-advertisement-base-price" style="font-size: 135%;"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span id="fs-gui-advertisement-base-inventory" style="font-size: 135%;"></span> 份秒杀
+            <span class="glyphicon glyphicon-triangle-right" style="font-size: 70%; top: 0.25vh"></span>
+        </div>
+        <div id="fs-gui-advertisement-base-close-btn"
+                style="color: white; position: absolute; top: -0.4vh; right: 4px; cursor: pointer; font-size: 18px;">x</div>
+    </div>
+</div>
+
+
+ 
+    
+
+<style>
+    .file-explorer-main-field-item-desktop:hover {
+        background-color: rgba(204,232,255, 0.5);
+    }
+</style>
+
+<div style="position: fixed; top: 71px; left: 17px;">
+    <div class="file-explorer-main-field-item file-explorer-main-field-item-desktop" style="border: none"
+        ondblclick="desktop_state.window.open_outer_window(desktop_state.os.builtin.application.applications.file_explorer,'main&address=~/');">
+        <div class="file-explorer-main-field-item-icon">
+            <img src="https://cdn.acwing.com/static/web/img/file_system/file/application/file_explorer/folder_icon.png" alt="文件图标"/>
+        </div>
+        <div class="file-explorer-main-field-item-title" style="color: white; font-size: 1.8vh; text-shadow: 3px 3px 3px grey;">文件</div>
+    </div>
+    <br>
+    <div class="file-explorer-main-field-item file-explorer-main-field-item-desktop" style="border: none"
+         ondblclick="desktop_state.window.open_outer_window(desktop_state.os.builtin.application.applications.file_explorer,'main&address=/我的空间/应用/');">
+        <div class="file-explorer-main-field-item-icon">
+            <img src="https://cdn.acwing.com/static/web/img/file_system/file/application/file_explorer/folder_icon.png" alt="文件图标"/>
+        </div>
+        <div class="file-explorer-main-field-item-title" style="color: white; font-size: 1.8vh; text-shadow: 3px 3px 3px grey;">应用</div>
+    </div>
+</div>
+
+
+<div id="acwing_page" >
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-lg" style="z-index: 10;">
+        <div class="container">
+            <!-- Header -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    
+                </button>
+                
+                <a class="navbar-brand" href="/">AcWing</a>
+            </div>
+
+            <!-- Items -->
+            <div class="collapse navbar-collapse" id="topNavBar">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="/about/">首页</a></li>
+                    <li id="navigation_activity_active_id" class=""><a href="/activity/">活动</a></li>
+                    <li class=""><a href="/problem/">题库</a></li>
+                    <li id="navigation_competition_active_id" class=""><a href="/activity/1/competition/">竞赛</a></li>
+                    <li class=""><a href="/file_system/file/content/whole/index/content/whole/application/1/">应用</a></li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            更多
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/solution/">题解</a></li>
+                            <li><a href="/blog/">分享</a></li>
+                            <li id="navigation_store_active_id" class=""><a href="/activity/1/product/">商店</a></li>
+
+                            <li class=""><a href="/http_wss/danmu/world/">吐槽</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="/app/version/download/index/">App</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    
+                        <li>
+                            <a href="/user/myspace/notification/1/">
+                                <span class="glyphicon glyphicon-bell" style="font-size: 20px;"></span>
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img class="img-circle" src="https://cdn.acwing.com/media/user/profile/photo/201486_sm_d80a638227.jpg" alt="Sundy_Loly 的头像" style="margin: -5px;" width="35px">
+                                &nbsp;
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <span style="cursor: pointer;" title="AC币">
+                                        <img src="https://cdn.acwing.com/static/web/img/acb2.png"
+                                             width="15px" alt="AC币图标"
+                                             style="margin-left: 20px; margin-bottom: 4px;">
+                                        &nbsp;
+                                        <span class="hidden-sm hidden-md hidden-lg" style="color: white;">0</span>
+                                        <span class="hidden-xs">0</span>
+                                    </span>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href = "/user/myspace/index/201486/">我的空间</a></li>
+                                <li><a href = "/user/profile/index/">个人信息</a></li>
+                                <li class="divider"></li>
+                                <li id="navigation_public_group_active_id" class=""><a href="/activity/content/public_group/entry/">校园</a></li>
+                                <li class="divider"></li>
+                                <li><a href = "/user/payment/order/index/">我的订单</a></li>
+                                <li><a href = "/user/work_sheet/index/">我的工单</a></li>
+                                <li class = "divider"></li>
+                                <li>
+                                    <form id="signout-form" action="/user/account/signout/" method="post">
+                                        <input type="hidden" name="csrfmiddlewaretoken" value="CjgKfXKdHDn26Ho6xXqmfNOgmqpcUdkjlgBUQQDkcXwl9S5yR87Ap6eVNb3bRrRf">
+                                    </form>
+                                    <a id="signout-link" style="cursor: pointer">退出</a>
+                                    <script>
+                                        $(document).ready(function (){
+                                            $('#signout-link').click(function (){
+                                                $('#signout-form').submit();
+                                            });
+                                        });
+                                    </script>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="base_body">
+    <script>
+        
+            $('#navigation_activity_active_id').addClass('active');
+        
+    </script>
+    
+        <div class="container" >
+        
+    
+    <div class="panel panel-default copy-with-link">
+        <div class="panel-body">
+            
+                
+
+<div class="row">
+    <div class="col-xs-12">
+        <span class="activity_title nice_font">Django框架课</span>
+        &nbsp;&nbsp;&nbsp;
+        <span class="btn btn-success activity_status">进行中</span>
+        
+
+        
+
+        
+            <a href="/activity/1/course/">
+                <span class="btn btn-default pull-right activity-menu-button" style="margin-right: 0">
+                    返回课程列表
+                </span>
+            </a>
+        
+
+        
+            <a href="/activity/content/aclass/content/72/">
+                
+                    <span class="btn btn-default pull-right activity-menu-button">
+                        在线教室
+                    </span>
+                
+            </a>
+
+            
+    
+        <div class="btn-group btn-group-inline pull-right">
+            <button class="btn btn-default dropdown-toggle activity-menu-button pull-activity-resource-files-btn"
+                    data-toggle="modal" data-target="#pull-activity-resource-files-modal" data-id="11" data-title="直播录像">
+                直播录像
+            </button>
+        </div>
+    
+        <div class="btn-group btn-group-inline pull-right">
+            <button class="btn btn-default dropdown-toggle activity-menu-button pull-activity-resource-files-btn"
+                    data-toggle="modal" data-target="#pull-activity-resource-files-modal" data-id="12" data-title="讲义">
+                讲义
+            </button>
+        </div>
+    
+    <style>
+        .activity-resource-file-item {
+            font-size: 16px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            color: #333;
+            cursor: pointer;
+        }
+        .activity-resource-file-item:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('.pull-activity-resource-files-btn').click(function () {
+                let $modal = $('#pull-activity-resource-files-modal');
+                $modal.find('.modal-title').text($(this).attr('data-title'));
+                $.ajax({
+                    url: "/activity/content/resourceget_activity_resource_file/",
+                    type: "GET",
+                    data: {
+                        activity_resource_id: $(this).attr('data-id'),
+                    },
+                    dataType: "json",
+                    cache: false,
+                    success: function (resp) {
+                        console.log(resp.activity_resource_files);
+                        if (resp.error_message === "success") {
+                            let $files = "";
+                            for (let file of resp.activity_resource_files) {
+                                if (file.category === "file") {
+                                    $files += `<div class="activity-resource-file-item" onclick="window.open('${file.file_url}')">${file.file_title}</div>`;
+                                } else if (file.category === "divider") {
+                                    $files += `<div class="activity-resource-file-item" style="cursor: default;">
+    <span>${file.title}</span>
+</div>`;
+                                }
+                            }
+                            $modal.find('.modal-body').html($files);
+                        }
+                    }
+                });
+            })
+        });
+    </script>
+
+    <div class="modal fade" id="pull-activity-resource-files-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" style="width: 85%; max-width: 600px;">
+            <div class="modal-content" style="margin-top: auto;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <hr style="margin: 10px 0 0 0;">
+                <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+
+                </div>
+                <hr style="margin: 10px 0 0 0;">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"  style="float: right; border-radius: 5px;">
+                        确定
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+
+
+
+
+
+
+        
+
+        
+
+        
+
+        
+        
+
+        
+
+        
+    </div>
+    <div class="col-xs-12">
+        &nbsp;
+    </div>
+    <div class="col-xs-6">
+        <span class="activity_th">参与人数：6425</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        
+            <span class="activity_th">起止时间：长期</span>
+        
+    </div>
+    <div class="col-xs-6 text-right">
+        
+            
+                <div align="right">
+                    <div class="information_card" align="left">
+                        <div class="row">
+                            <div class="col-xs-4" style="">
+                                <a href="/activity/content/activity_person/content/816754/1/">
+                                    <img class="img photo" src="https://cdn.acwing.com/media/user/profile/photo/201486_md_d80a638227.jpg" width="40px" height="40px" alt="人物头像">
+                                </a>
+                            </div>
+                            <div class="col-xs-8">
+                                <div style="height: 13px; line-height: 1;">
+                                    <a href="/activity/content/activity_person/content/816754/1/">
+                                        <span class="nice_font" title="Sundy_Loly" style="font-size: 16px;">
+                                            Sundy_Lo…
+                                        </span>
+                                    </a>
+                                </div>
+                                <div style= "margin-top: 8px;">
+                                    <span style="font-size: 13px; color: #6a737c">
+                                        <a href="/activity/content/ranking/72/1/">
+                                            <span class="" title="排名">排名：2360/6425</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        
+    </div>
+</div>
+<br>
+            
+            <ul class="nav nav-tabs nav-justified activity-sub-btn">
+                
+                    <li role="presentation" class="">
+                        <a href="/activity/content/introduction/72/">详情</a>
+                    </li>
+                
+                
+                
+                    
+                        <li role="presentation" class="active">
+                            <a href="/activity/content/punch_the_clock/72/">打卡</a>
+                        </li>
+                    
+                
+                
+                    <li role="presentation" class="">
+                        <a href="/activity/content/record/72/1/">动态</a>
+                    </li>
+                
+                
+                
+                
+                    <li role="presentation" class="">
+                        <a href="/activity/content/ranking/72/1/">排行</a>
+                    </li>
+                
+                
+                
+                    <li role="presentation" class="">
+                        <a href="/activity/content/discuss/72/1/">讨论</a>
+                    </li>
+                
+            </ul>
+            <br>
+            
+    
+         <div class="panel panel-warning panel-week" id="week_724" style="cursor: pointer">
+            <div class="panel-heading">
+                <span class="week_title">10. Rest Framework与JWT身份验证</span>
+                <span class="week_finish">
+                    
+                    完成情况：0/1
+                </span>
+            </div>
+            <div class="panel-body">
+                
+                <span class="nice_font"></span>
+                
+            </div>
+         </div>
+        <div class="center-block" style="width: 95%;display: none;" id="week_panel_724">
+            <div class="panel panel-default panel-problems">
+                <div class="panel-body">
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">课上代码</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/6972/" target="_blank" class="clock-problem-title">
+                                                <span>工程课 Django-10.1. 上课笔记</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/6972/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">57人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+         <div class="panel panel-warning panel-week" id="week_613" style="cursor: pointer">
+            <div class="panel-heading">
+                <span class="week_title">9. 实现匹配系统</span>
+                <span class="week_finish">
+                    
+                    完成情况：0/2
+                </span>
+            </div>
+            <div class="panel-body">
+                
+                <span class="nice_font"></span>
+                
+            </div>
+         </div>
+        <div class="center-block" style="width: 95%;display: none;" id="week_panel_613">
+            <div class="panel panel-default panel-problems">
+                <div class="panel-body">
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">thrift服务</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5897/" target="_blank" class="clock-problem-title">
+                                                <span>工程课 Django-9.1. 上课笔记</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5897/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">163人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                            <hr style="margin-top:0; margin-bottom: 0; height: 0 !important; border-color: #dbdbdb;">
+                        
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">战绩更新</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5898/" target="_blank" class="clock-problem-title">
+                                                <span>工程课 Django-9.2. 上课笔记</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5898/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">153人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+         <div class="panel panel-warning panel-week" id="week_608" style="cursor: pointer">
+            <div class="panel-heading">
+                <span class="week_title">8. 实现聊天系统</span>
+                <span class="week_finish">
+                    
+                    完成情况：0/1
+                </span>
+            </div>
+            <div class="panel-body">
+                
+                <span class="nice_font"></span>
+                
+            </div>
+         </div>
+        <div class="center-block" style="width: 95%;display: none;" id="week_panel_608">
+            <div class="panel panel-default panel-problems">
+                <div class="panel-body">
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">上课笔记</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5875/" target="_blank" class="clock-problem-title">
+                                                <span>工程课 Django-8.1. 上课笔记</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5875/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">200人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+         <div class="panel panel-warning panel-week" id="week_604" style="cursor: pointer">
+            <div class="panel-heading">
+                <span class="week_title">7. 实现联机对战</span>
+                <span class="week_finish">
+                    
+                    完成情况：0/2
+                </span>
+            </div>
+            <div class="panel-body">
+                
+                <span class="nice_font"></span>
+                
+            </div>
+         </div>
+        <div class="center-block" style="width: 95%;display: none;" id="week_panel_604">
+            <div class="panel panel-default panel-problems">
+                <div class="panel-body">
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">上</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5856/" target="_blank" class="clock-problem-title">
+                                                <span>工程课 Django-7.1. 上课笔记</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5856/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">253人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                            <hr style="margin-top:0; margin-bottom: 0; height: 0 !important; border-color: #dbdbdb;">
+                        
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">下</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5857/" target="_blank" class="clock-problem-title">
+                                                <span>工程课 Django-7.2. 上课笔记</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5857/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">219人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+         <div class="panel panel-warning panel-week" id="week_593" style="cursor: pointer">
+            <div class="panel-heading">
+                <span class="week_title">6. 创建账号系统</span>
+                <span class="week_finish">
+                    
+                    完成情况：0/3
+                </span>
+            </div>
+            <div class="panel-body">
+                
+                <span class="nice_font"></span>
+                
+            </div>
+         </div>
+        <div class="center-block" style="width: 95%;display: none;" id="week_panel_593">
+            <div class="panel panel-default panel-problems">
+                <div class="panel-body">
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">用户名密码登录</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5798/" target="_blank" class="clock-problem-title">
+                                                <span>工程课 Django-6.1. 上课笔记</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5798/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">362人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                            <hr style="margin-top:0; margin-bottom: 0; height: 0 !important; border-color: #dbdbdb;">
+                        
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">web端AcWing授权登录</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5799/" target="_blank" class="clock-problem-title">
+                                                <span>工程课 Django-6.2. 上课笔记</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5799/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">314人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                            <hr style="margin-top:0; margin-bottom: 0; height: 0 !important; border-color: #dbdbdb;">
+                        
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">acapp端AcWing授权登录</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5822/" target="_blank" class="clock-problem-title">
+                                                <span>工程课 Django-6.3. 上课笔记</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5822/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">292人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+         <div class="panel panel-warning panel-week" id="week_589" style="cursor: pointer">
+            <div class="panel-heading">
+                <span class="week_title">5. 部署nginx与对接acapp</span>
+                <span class="week_finish">
+                    
+                    完成情况：0/1
+                </span>
+            </div>
+            <div class="panel-body">
+                
+                <span class="nice_font"></span>
+                
+            </div>
+         </div>
+        <div class="center-block" style="width: 95%;display: none;" id="week_panel_589">
+            <div class="panel panel-default panel-problems">
+                <div class="panel-body">
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">上课笔记</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5777/" target="_blank" class="clock-problem-title">
+                                                <span>工程课 Django-5.1. 上课笔记</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5777/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">493人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+         <div class="panel panel-warning panel-week" id="week_580" style="cursor: pointer">
+            <div class="panel-heading">
+                <span class="week_title">4. 创建游戏界面</span>
+                <span class="week_finish">
+                    
+                    完成情况：0/1
+                </span>
+            </div>
+            <div class="panel-body">
+                
+                <span class="nice_font"></span>
+                
+            </div>
+         </div>
+        <div class="center-block" style="width: 95%;display: none;" id="week_panel_580">
+            <div class="panel panel-default panel-problems">
+                <div class="panel-body">
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">上课笔记</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5740/" target="_blank" class="clock-problem-title">
+                                                <span>工程课 Django-4.1. 上课笔记</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5740/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">515人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+         <div class="panel panel-warning panel-week" id="week_578" style="cursor: pointer">
+            <div class="panel-heading">
+                <span class="week_title">3. 创建菜单界面</span>
+                <span class="week_finish">
+                    
+                    完成情况：0/1
+                </span>
+            </div>
+            <div class="panel-body">
+                
+                <span class="nice_font"></span>
+                
+            </div>
+         </div>
+        <div class="center-block" style="width: 95%;display: none;" id="week_panel_578">
+            <div class="panel panel-default panel-problems">
+                <div class="panel-body">
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">上课笔记</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5729/" target="_blank" class="clock-problem-title">
+                                                <span>工程课 Django-3.1. 上课笔记</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5729/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">699人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+         <div class="panel panel-warning panel-week" id="week_574" style="cursor: pointer">
+            <div class="panel-heading">
+                <span class="week_title">2. 配置docker、git环境与项目创建</span>
+                <span class="week_finish">
+                    
+                    完成情况：0/1
+                </span>
+            </div>
+            <div class="panel-body">
+                
+                <span class="nice_font"></span>
+                
+            </div>
+         </div>
+        <div class="center-block" style="width: 95%;display: none;" id="week_panel_574">
+            <div class="panel panel-default panel-problems">
+                <div class="panel-body">
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">上课笔记</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5717/" target="_blank" class="clock-problem-title">
+                                                <span>工程课 Django-2.1. 上课笔记</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5717/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">1041人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+         <div class="panel panel-warning panel-week" id="week_571" style="cursor: pointer">
+            <div class="panel-heading">
+                <span class="week_title">1. Python3语法</span>
+                <span class="week_finish">
+                    
+                    完成情况：0/10
+                </span>
+            </div>
+            <div class="panel-body">
+                
+                <span class="nice_font"></span>
+                
+            </div>
+         </div>
+        <div class="center-block" style="width: 95%;display: none;" id="week_panel_571">
+            <div class="panel panel-default panel-problems">
+                <div class="panel-body">
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">1</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5700/" target="_blank" class="clock-problem-title">
+                                                <span>AcWing 608. 差</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5700/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">2141人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                            <hr style="margin-top:0; margin-bottom: 0; height: 0 !important; border-color: #dbdbdb;">
+                        
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">2</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5701/" target="_blank" class="clock-problem-title">
+                                                <span>AcWing 665. 倍数</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5701/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">1987人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                            <hr style="margin-top:0; margin-bottom: 0; height: 0 !important; border-color: #dbdbdb;">
+                        
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">3</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5702/" target="_blank" class="clock-problem-title">
+                                                <span>AcWing 670. 动物</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5702/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">1771人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                            <hr style="margin-top:0; margin-bottom: 0; height: 0 !important; border-color: #dbdbdb;">
+                        
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">4</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5703/" target="_blank" class="clock-problem-title">
+                                                <span>AcWing 660. 零食</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5703/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">1783人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                            <hr style="margin-top:0; margin-bottom: 0; height: 0 !important; border-color: #dbdbdb;">
+                        
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">5</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5704/" target="_blank" class="clock-problem-title">
+                                                <span>AcWing 760. 字符串长度</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5704/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">1786人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                            <hr style="margin-top:0; margin-bottom: 0; height: 0 !important; border-color: #dbdbdb;">
+                        
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">6</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5712/" target="_blank" class="clock-problem-title">
+                                                <span>AcWing 721. 递增序列</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5712/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">1708人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                            <hr style="margin-top:0; margin-bottom: 0; height: 0 !important; border-color: #dbdbdb;">
+                        
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">7</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5713/" target="_blank" class="clock-problem-title">
+                                                <span>AcWing 726. 质数</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5713/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">1639人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                            <hr style="margin-top:0; margin-bottom: 0; height: 0 !important; border-color: #dbdbdb;">
+                        
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">8</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5714/" target="_blank" class="clock-problem-title">
+                                                <span>AcWing 745. 数组的右上半部分</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5714/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">1511人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                            <hr style="margin-top:0; margin-bottom: 0; height: 0 !important; border-color: #dbdbdb;">
+                        
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">9</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5715/" target="_blank" class="clock-problem-title">
+                                                <span>AcWing 756. 蛇形矩阵</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5715/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">1347人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                            <hr style="margin-top:0; margin-bottom: 0; height: 0 !important; border-color: #dbdbdb;">
+                        
+                    
+                        <div class="row justify-content-center align-self-center">
+                            <div class="col-xs-3 col-sm-2">
+                                <span class="dayname">10</span>
+                            </div>
+                            <div class="col-xs-9 col-sm-10">
+                                
+                                    <div class="punch-line" style="padding-top: 5px; padding-bottom: 5px; margin-top: 0; margin-bottom: 0;">
+                                        
+                                            <a href="/activity/content/problem/content/5716/" target="_blank" class="clock-problem-title">
+                                                <span>AcWing 823. 排列</span>
+                                                
+                                            </a>
+                                            
+                                                <a href="/activity/content/code/add/5716/" title="打卡" target="_blank"><span class="glyphicon glyphicon-pencil problem-submit"></span></a>
+                                            
+                                            
+                                                <span class="problem-persons">1349人打卡</span>
+                                            
+                                        
+                                    </div>
+                                    
+                                
+                            </div>
+                        </div>
+                        
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+
+        </div>
+    </div>
+
+    
+    
+    
+
+    
+    </div>
+
+</div>
+    
+
+<div id="1024-activity" style="position: fixed; top: 15vh; cursor: pointer; display: none; z-index:999999999">
+    <div id="1024-activity-whole">
+        <img id="1024-img" src="https://cdn.acwing.com/static/web/img/base/national_activity/20230911.png" width="80" alt="1024" style="border-radius: 5px">
+        <div id="1024-close-btn" style="color: black; position: fixed; top: calc(15vh - 8px); left: 70px; cursor: pointer; font-size: 20px;">x</div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            const start_date = 24, start_hours = 10;
+            let $activity = $('#1024-activity');
+            let $img = $('#1024-img');
+            let $timer = $('#1024-timer');
+            if (!((new Date()).getDate() < start_date || (new Date()).getDate() === start_date && (new Date()).getHours() < start_hours)) {
+                $img.attr('src', "https://cdn.acwing.com/static/web/img/base/national_activity/20230911.png");
+            }
+
+            if (typeof(localStorage) !== "undefined") {
+                let last_time = localStorage.getItem("1024-activity-last-close-time");
+                let delta_time = Math.ceil((Date.now() - last_time) / 1000);
+
+                if (delta_time < 6 * 3600) return false;  // 6小时内关闭过，则不再展示
+            }
+
+            $activity.show("slide", { direction: "left" }, 200);
+            if ((new Date()).getDate() < start_date || (new Date()).getDate() === start_date && (new Date()).getHours() < start_hours) {
+                $timer.show();
+            }
+
+            let has_closed = false;
+            let myeffect = function () {
+                if (has_closed) return false;  // 如果已经关闭，则不再抖动
+                setTimeout(function () {
+                    $activity.effect("bounce", "slow", function () {
+                        myeffect();
+                    });
+                }, 5000);  // 每5s循环一次
+            };
+            myeffect();
+
+            let $close_btn = $('#1024-close-btn');
+            $close_btn.click(function () {
+                $activity.hide("slide", { direction: "left" }, 200);
+                if (typeof(localStorage) !== "undefined") {
+                    localStorage.setItem("1024-activity-last-close-time", Date.now());
+                }
+                return false;
+            });
+            $activity.click(function () {
+                $activity.hide("slide", { direction: "left" }, 200);
+                if (typeof(localStorage) !== "undefined") {
+                    localStorage.setItem("1024-activity-last-close-time", Date.now());
+                }
+                window.open(/activity/, '_blank').focus();
+            });
+
+            let update_timer = function (time) {
+                let secs = Math.ceil((Date.parse(time) - Date.now()) / 1000);
+                let interval_function = function () {
+                    if (secs <= 0) {
+                        $timer.hide();
+                        $img.attr('src', "https://cdn.acwing.com/static/web/img/base/national_activity/20230911.png");
+                        return false;
+                    }
+                    let second = secs;
+                    let hours = Math.floor(second / 3600);
+                    second -= hours * 3600;
+                    let minutes = Math.floor(second / 60);
+                    second -= minutes * 60;
+
+                    let $hour = $('#1024-timer-hour');
+                    let $minute = $('#1024-timer-minute');
+                    let $second = $('#1024-timer-second');
+
+                    $hour.text(hours >= 10 ? hours: "0" + hours);
+                    $minute.text(minutes >= 10 ? minutes : "0" + minutes);
+                    $second.text(second >= 10 ? second : "0" + second);
+                    secs -- ;
+                };
+
+                interval_function();
+                setInterval(interval_function, 1000)
+            };
+
+            if ((new Date()).getDate() < start_date || (new Date()).getDate() === start_date && (new Date()).getHours() < start_hours) {
+                update_timer("2022-12-10T20:00:00");
+            }
+        });
+    </script>
+</div>
+    <footer id="acwing_footer" class="footer">
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-sm-8 copyright">
+                <span>
+                    © 2018-2023 AcWing 版权所有
+                    &nbsp;|&nbsp;
+                    <a href="http://beian.miit.gov.cn/">京ICP备2021015969号-2</a>
+                </span>
+            </div>
+            <div class="text-right col-sm-4 region-us">
+                <div class="links">
+                    <a href="/footer/agreement/">用户协议</a>
+                    &nbsp;|&nbsp;
+                    <a href="/footer/privacy_policy/">隐私政策</a>
+                    &nbsp;|&nbsp;
+                    <a href="/footer/faq/">常见问题</a>
+                    &nbsp;|&nbsp;
+                    <a href="/footer/contactus/">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+
+    <div id="need-to-bandage-cell-phone-modal-warning" class="modal modal-message modal-warning fade" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="glyphicon glyphicon-warning-sign"></i>
+                </div>
+                <div class="modal-body">
+                    该操作需要绑定手机号
+                </div>
+                <div class="modal-footer">
+                    <a href="/user/profile/index/#security-cell-phone" class="btn btn-warning" target="_blank">去绑定</a>
+                </div>
+            </div> <!-- / .modal-content -->
+        </div> <!-- / .modal-dialog -->
+    </div>
+
+
+
+
+
+
+<div id="modal-warning" class="modal modal-message modal-warning fade" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="glyphicon glyphicon-warning-sign"></i>
+            </div>
+            <div id="warning_message_content" class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-dismiss="modal">OK</button>
+            </div>
+        </div> <!-- / .modal-content -->
+    </div> <!-- / .modal-dialog -->
+</div>
+
+
+    
+    <script>
+        $(document).ready(function () {
+            
+                
+                    $('#week_724').click(function () {
+                        $('#week_panel_724').toggle('slide', {direction: "up"}, 1000);
+                    });
+                
+            
+                
+                    $('#week_613').click(function () {
+                        $('#week_panel_613').toggle('slide', {direction: "up"}, 1000);
+                    });
+                
+            
+                
+                    $('#week_608').click(function () {
+                        $('#week_panel_608').toggle('slide', {direction: "up"}, 1000);
+                    });
+                
+            
+                
+                    $('#week_604').click(function () {
+                        $('#week_panel_604').toggle('slide', {direction: "up"}, 1000);
+                    });
+                
+            
+                
+                    $('#week_593').click(function () {
+                        $('#week_panel_593').toggle('slide', {direction: "up"}, 1000);
+                    });
+                
+            
+                
+                    $('#week_589').click(function () {
+                        $('#week_panel_589').toggle('slide', {direction: "up"}, 1000);
+                    });
+                
+            
+                
+                    $('#week_580').click(function () {
+                        $('#week_panel_580').toggle('slide', {direction: "up"}, 1000);
+                    });
+                
+            
+                
+                    $('#week_578').click(function () {
+                        $('#week_panel_578').toggle('slide', {direction: "up"}, 1000);
+                    });
+                
+            
+                
+                    $('#week_574').click(function () {
+                        $('#week_panel_574').toggle('slide', {direction: "up"}, 1000);
+                    });
+                
+            
+                
+                    $('#week_571').click(function () {
+                        $('#week_panel_571').toggle('slide', {direction: "up"}, 1000);
+                    });
+                
+            
+        });
+    </script>
+
+
+
+
+
+<script src="https://cdn.acwing.com/static/web/js/copy_with_link.js"></script>
+<script>
+    let article_author = "";
+    if (article_author.length === 0) article_author = "AcWing";
+    let VIDEO_CONTENT_WATERMARK_LOGO_URL = "https://cdn.acwing.com/static/web/img/32X32.ico";
+</script>
+<script src="https://cdn.acwing.com/static/plugins/js/highlight.min.js"></script>
+<script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+          showMathMenu: false,
+        });
+</script>
+<script type="text/javascript" src="https://cdn.acwing.com/static/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    $('pre').each(function(i, block){
+        hljs.highlightBlock(block);
+    });
+</script>
+
+    <script src="https://cdn.acwing.com/static/web/js/file_system/file/operation/collect/favorite-0.0.2.js"></script>
+    <script src="https://cdn.acwing.com/static/web/js/file_system/file/operation/vote/vote-0.0.2.js"></script>
+    <script type="text/javascript" src="https://cdn.acwing.com/static/web/js/file_system/file/operation/content/delete-0.0.4.js"></script>
+    <script type="text/javascript" src="https://cdn.acwing.com/static/web/js/file_system/file/operation/comment/add-0.0.5.js"></script>
+    <script type="text/javascript" src="https://cdn.acwing.com/static/web/js/file_system/file/operation/comment/delete-0.0.4.js"></script>
+    <script type="text/javascript" src="https://cdn.acwing.com/static/web/js/file_system/file/operation/comment/vote-0.0.7.js"></script>
+    <script src="https://cdn.acwing.com/static/web/js/file_system/file/content/abstract/vote-0.0.3.js"></script>
+    <script src="https://cdn.acwing.com/static/web/js/file_system/file/content/abstract/collect-0.0.4.js"></script>
+
+<script type="text/javascript" src="https://cdn.acwing.com/static/web/js/file_system/file/operation/comment/pull-0.0.6.js"></script>
+<script>
+    
+    
+    window.onbeforeunload = function (ev) {
+
+        
+            let windows = desktop_state.window.windows;
+            for (let i = 0; i < windows.length; i ++ ) {  // 把所有未关闭的窗口关闭
+                if (windows[i]) {
+                    desktop_state.window.close(i);
+                }
+            }
+        
+
+        let notify = false;
+        for (let i = 0; i < onbeforeunload_functions.length; i ++ ){
+            let ret = onbeforeunload_functions[i]();
+            if (ret){
+                notify = true;
+            }
+        }
+        if (notify){
+            return true;
+        }
+    };
+
+    let CLICK_URL = "/status/count/click/";
+</script>
+<script src="https://cdn.acwing.com/static/web/js/status/click.js"></script>
+
+</body>
+</html>
+
