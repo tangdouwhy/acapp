@@ -13,6 +13,7 @@ def func(tu):
     for i in tu:
         if not i[1]:
             path = str(i[0]) + '\\' + str(*i[2])
+            print(path)
             list_file.append(path)
     return list_file
 
