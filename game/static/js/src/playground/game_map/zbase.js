@@ -1,5 +1,5 @@
-class GameMap extends AcGameObject{
-    constructor(playground){
+class GameMap extends AcGameObject {
+    constructor(playground) {
         super();
         this.playground = playground;
         this.$canvas = $(`<canvas></canvas>`);
@@ -7,18 +7,17 @@ class GameMap extends AcGameObject{
         this.ctx.canvas.width = this.playground.width;
         this.ctx.canvas.height = this.playground.height;
         this.playground.$playground.append(this.$canvas);
-
     }
 
-    start(){
+    start() {
     }
 
-    update(){
+    update() {
         this.render();
     }
 
-    render(){
-        this.ctx.fillStyle="rgba(0,0,0,6)";
-        this.ctx.fillRect(0,0,this.ctx.canvas.width,this.ctx.canvas.height);
+    render() {
+        this.ctx.fillStyle = "rgba(0,0,0,6)";
+        this.ctx.fillRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
     }
 }
