@@ -23,6 +23,7 @@ class AcGameMenu{
         this.$multi_mode=this.$menu.find('.ac-game-menu-field-item-multi-mode');
         this.$settings_mode=this.$menu.find('.ac-game-menu-field-item-settings-mode');
             
+        this.show();
         this.start();
     }
 
@@ -209,12 +210,13 @@ class Particle extends AcGameObject {
             return false;
         });
         this.playground.game_map.$canvas.mousedown(function (e) {
+            const rect = outer.ctx.canvas.getBoundingClientRect();
             if (!outer.playground.players[0].is_me) return;
             if (e.which === 3) {
-                outer.move_to(e.clientX, e.clientY);
+                outer.move_to(e.clientX-rect.left, e.clientY-rect.top);
             } else if (e.which === 1) {
                 if (outer.cur_skill === "fire ball") {
-                    outer.shoot_fireball(e.clientX, e.clientY);
+                    outer.shoot_fireball(e.clientX-rect.left, e.clientY-rect.top);
                     // console.log(outer.x, outer.y);
                 }
                 outer.cur_skill = null;
@@ -401,16 +403,8 @@ class FireBall extends AcGameObject {
         this.$playground = $(`
 <div class="ac-game-playground"></div>
 `);
-        // this.hide();
-        this.root.$ac_game.append(this.$playground);
-        this.width = this.$playground.width();
-        this.height = this.$playground.height();
-        this.game_map = new GameMap(this);
-        this.players = [];
-        this.players.push(new Player(this, this.width / 2, this.height / 2, this.height * 0.05, "white", this.height * 0.15, true));
-        for (let i = 0; i < 5; i++) {
-            this.players.push(new Player(this, this.width / 2, this.height / 2, this.height * 0.05, this.get_random_color(), this.height * 0.15, false));
-        }
+        this.hide();
+      
         this.start();
     }
 
@@ -429,6 +423,16 @@ class FireBall extends AcGameObject {
     show() {
         //打开playground界面
         this.$playground.show();
+        this.root.$ac_game.append(this.$playground);
+        this.width = this.$playground.width();
+        this.height = this.$playground.height();
+        this.game_map = new GameMap(this);
+        this.players = [];
+        this.players.push(new Player(this, this.width / 2, this.height / 2, this.height * 0.05, "white", this.height* 0.15, true));
+        for (let i = 0; i < 5; i++) {
+            this.players.push(new Player(this, this.width / 2, this.height / 2, this.height * 0.05, this.get_random_color(), this.height * 0.15, false));
+        }
+
     }
 
     hide() {
@@ -440,7 +444,7 @@ export class AcGame {
     constructor(id) {
         this.id = id;
         this.$ac_game = $('#' + id);
-        // this.menu=new AcGameMenu(this);
+        this.menu=new AcGameMenu(this);
         this.playground = new AcGamePlayground(this);
 
         this.start();
